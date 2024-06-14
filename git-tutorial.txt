@@ -90,6 +90,15 @@ $ git branch -d <branch name>
 to switch and create a new branch
 $ git switch -c newBranch
 
-//upload to GitHub/
+//Upload to GitHub/
 
 $ git remote add origin <link>
+$ git branch -M main
+$ git push -u origin main
+
+check remote url
+$ git remote -v
+
+remove an existing remote
+$ git remote remove origin
+
