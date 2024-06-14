@@ -1,0 +1,138 @@
+// What is Git
+-Free and open source version control system.
+
+// What is Version Control
+-The management of changes to documents, computer programs, large web sites, and other collections of information.
+
+// Terms:
+Directory - Folder
+
+Terminal or Command Line - Interface for Text Commands
+
+CLI - command line interface
+- openning files 
+
+cd - change directory
+
+code editor - word processor for writing code
+
+repository - project, folder where you project is kept
+
+git- tool that tracks changes in your code
+
+github - website that host your repositories.
+
+//Git commands:
+
+clone - bring a repository that is hosted somewhere like github into a folder on your local machine
+
+add - Track your files and changes in Git
+
+commit - save your files in git
+
+push - upload git commmits to a remote repo, like github
+
+pull - download changes from remote repo to your local machine, opposite of push
+
+
+
+mockup - static represenation of a product.
+
+//README.md
+#heading
+
+Some description.
+
+
+//pulling / cloning
+
+git clone git@github.com:marianoluiz/demo-repo.git
+
+	cd demo-repo
+
+	*nasa loob kana
+	*.git directory (hidden)
+
+	ls -la
+		*can see list of items including hidden files.
+		*hindi gumagana 	sakin idk why
+
+	hidden .git folder stores all files that save your commit
+	
+	.git stores all changes recorded in the history of this repository
+
+	
+git status - shows all files were updated,created,deleted but still havent saved on the commit yet.
+
+untracked
+
+git add . to track all files in here
+
+or
+
+git add index.html
+
+
+after git status and all color green, they are ready to be commited coz it is alr tracked in git
+
+
+git commit -m "Added index.html" -m "some description"
+
+in order to push u need first to prove u are the owner of acc u need 
+
+*using ssh keys 
+*generating key locally using ssh key , specify encryption in -t rsa -b idk imnot shor but ganon:
+
+ssh-keygen -t rsa -b 4096 -C "kmarianu@gmail.com"
+
+
+
+default file for the ssh key is 
+(/Users/name/.ssh/id-rsa)
+
+enter file in whioch to save key: testkey
+
+
+ls | grep testkey
+
+napangalan q ata ey nag bug
+
+ls to check test key 
+dalawa dapat un
+testKey
+testKey.pub
+
+testKey.pub is the key that you are going to upload to ur github interface. oki lang makita ibang tao
+
+ung walang .pub ung private key. you have to keep secure in ur machine. 
+
+everytime u want to connect to github/ push/ use ur account via local machine. u use private key to show github that u are the one who generated this key
+
+cat.testkey.pub 
+*shows pub key
+
+
+copy yung key, wag ctrl c (iba yon sa terminal.
+or use 
+pbcopy < ~/testKey.pub
+dapat ata less than symbol kaya not wokring for me; ctrl c works fine for me tho
+
+
+go github
+settings/shs and gpg keys
+
+paste dun yung shs key then save
+
+//now make sure local CLI knows about the key you just generated
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent
+
+Adding your SSH key to the ssh-agent
+ 
+1. Get-Service -Name ssh-agent
+
+3. ssh-add /c/Users/YOU/.ssh/id_ed25519
+
+ssh-add /c/Users/kmari/.ssh/id_ed25519
+
+replace id_ed25519 with private key file

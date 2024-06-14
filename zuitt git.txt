@@ -1,0 +1,70 @@
+CLI (command line interface)
+    week 1
+        pwd ‒ to know your location in file.
+        ls ‒ to know the list of files in your location
+        cd ‒ change directory or to move location or directory. [eg: cd documents, cd .. (to move back)]
+        mkdir ‒ to create a folder. [eg: mkdir sandbox, mkdir s01 s02 s03 s04 s05]
+        touch ‒ to create a file. [eg: touch index.html]
+        in documents, this is the structure https://remnote-user-data.s3.amazonaws.com/bVVCKVITULO6aaJ1lbhWbTmQKfpN9uZGngnIU9MoX58Xz4DiNnAuPkJ-XLFvJMF_ZqXODfvP1hsS0tGwOVKy1AtH9t7ZgRXLd6ch8F3u-qWvKsqFtHIup_pNtXB3-BhA.png 
+    week 2
+        In documents>01FrontEndCourse>s02>d1
+        git config ‒global user.email "email"
+        git config ‒global user.email
+        git config ‒global user.name "king luiz"
+        git config ‒global user.name 
+        git init [ initialize/ to be master / it will be tracked ]   
+            [ cdwe now have a local repository in d1 ]
+        touch discussion.txt
+        git status [ it is still red or untrackable therefore we need to commit it ]
+        git add .
+        git status [again] 
+        git commit -m "Initial commit" [it shows how many file change, insertions, deletions]
+        git log [to show time and date where we made our first commit eme eme]
+        mv discussion.txt discussion2.txt [change name]
+        git status [ it is red because there is a change ]
+        git add .  [ to track ]
+        git status [ it is now green] 
+        git commit -m "Renamed discussion file"
+        git log [it must have 2 commited records]
+        https://remnote-user-data.s3.amazonaws.com/ElJJCuEVLUShfsJbanjKUVD46XwKVobI_vysVccSUCitwAxPwWAL8mENVHXJp_P-Min5H9eIycPe88ZToaccHqV3-PmWyG2sTwcJ7V65hvUfmt4Q7MKj6th9biJEP6yl.png https://remnote-user-data.s3.amazonaws.com/xBJmip2dsqjRvrVqhJX0woJrH8h9jJELX-dL6sqH2ip4-WIie8JhVXgZp-aH7RLUPbvIGsjjd6FN6G0FGMzJp6ChinnzJj0K4KdTlynBwdQRmhkRXXz3rmo_QH1RZuK_.png https://remnote-user-data.s3.amazonaws.com/HyM7GX6Okx9DBwyUKueL-Ri-iDZEECKBH6YI9ElWCs2XwBe0VnZE-yMa8w507oGmAOv8JJBmFFa3EP3whZdG9c4VSCgJ6EeTGfSY7sDrobq_u-bXpZDwEMGsV7EPQO_I.pnghttps://remnote-user-data.s3.amazonaws.com/9ACzHDWMQ3NgS8V6GJPW24ZDVIWkU8ESBAwsxp_SpMy9z_Ayx1WoZX7WEVqXskcl8rwYIA2t0AFvSWqdwnWv5QOziv8zZWT_eu1LdpBzK6ZWQiqgyOFwOkgtJBnFXoPg.png 
+        create group king-edsci 
+        subgroup s02
+        project d1
+        preferences>ssh keys 
+        ssh keys gives us permission to upload our repo to internet
+        open new gitbash
+        ssh-keygen
+        click enter 3 times
+        clip < ~/.ssh/id_rsa.pub  
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDS+S04nqpfpHl5VDrd3oCALyC6q7aLWslvaRr3ADeKCIta7C3ktks53aVeJxj14dKo1wmPY1v07EHoPtdAi1m7gj9TZJlRVLWR/d4Dyt3OHdb8kALHC4WggDRtXNWJnt72fp1MEh/X3p9clOjINNtJfj6xIp+CwKR/zRHOPFN/I8v/IILU42f/DybVWdkYEIvZC9zhGtHQ5p9DKItyc2KZh+VJKJYfc9XxJ0S5+lNcOWETKy/OBGlJTQoueca3mLMWkre6xj+JH2jOqolXMbWs3qF2S5RS+jiP7PG2gpLDIKx6HhHGSNUdHv7L8Um302MzFM60YVILRu2iCbQfMxfLSA35fOwn5Sg7zRKpY6d+w0vzcpaHBxulhpwcIzjzUErEzVwJeDvPs1AiRdKiMTrK1pwV5I0uTXMrftfOY5Y8GoI6qXaBSRoOj068qMU3SuhB4rSqIaL40AT8x7xARl9hZlY7/iuArDXmspbNPhUGBQ+3vOIHPGzIDc9vJe+CApE= kmari@DESKTOP-BP1JVOL
+            
+            ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsn1dXIQK1cuu5YNt7tzWCT+rRZbGgeJJyYf3VMkxbtzq61kx85LH1A9C3HqykH+HusST4Nbik8qPBwdMXgfxgmMLriTBLKCPwT7SpMeVvDeD8M+lTORyRkxfIlM+tjLEpGPYhRu3g1J1eGpzxRoLkhQXcUgBcBDfvjdiSIWe9pD6wUGlLCRt4gdGtpghjvc+qD/J6XZOG/j4dzHbXLFWf8gKKsE9+wXctcDLTYW6JAY1JWYbU62gCCp3ufNf8YQhHON3CnuU8QOrvxOD7HhTcj0z2P3DWLy45qGL3cLL5HNevhvV8R5PHGw8NyP95LOJMJQ3KhEu37735bYiX5RyrqCNFTheFiX1LaQJ7O0J92804wmNih4MmAnia7PRbuJQjSaYqSkqFvjymKgcF8WSjA0GZmNrWUu4QidNtKxCjmd77LksGM3jK92EEBXQ9mCBqjmGvD6oiO6VCoH5/13SZW9ieRkgQ+exwv2aGls4wjPiu8uAZT6Tvlz4KvT311zU= kmari@DESKTOP-BP1JVOL
+            we are going to push to remote repository keygen
+        git remote add origin git@gitlab.com:edsci-king1/s02/d1.git
+        fatal: not a git repository (or any of the parent directories): .git   [my error]
+        git push origin master
+        when we reload, there is our discussion2.txt
+        
+        
+    week 3
+    git init (if hindi raw repo yung lumalabas)
+    git add .
+    git commit -m "Initial commit"
+    git remote add origin  
+    git push origin master
+    git remote remove origin
+    git remote -v
+    git push origin master
+    01frontendcourse is getting uploaded then: https://remnote-user-data.s3.amazonaws.com/jbeM8DMuoY04gjujEoHWxplnFT10AuWsdPXxw4_uWxg6vQUxKpnlF3HnDIEHx9pMXn_ZMEMMDbS49h5D64MlK8-Z7bQ_QE6M9UxHP1fG27G5e6g4VeSwjcEssGWAJmlb.png 
+    , to check, https://remnote-user-data.s3.amazonaws.com/HDWxcVL6g1uwPFhx09WXrpbUwYqhLoDTNfZEqsT-RRsxaxN-mQmNM6JOEgJucf_nBFt4ntj0ABeNgsFAGXmAVjBYgR12CZutmN9mvSVEQsmJoyVtOIE_Z6SPh5OUkfqr.png ; do this
+    github
+        git add .
+        git commit -m "Initial commit"
+        git remote add origin
+        git remote add github https://github.com/kingthelofiboi/s10.git 
+        git push github master
+        
+        
+HTML
+
+

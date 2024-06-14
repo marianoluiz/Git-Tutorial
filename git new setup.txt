@@ -1,0 +1,38 @@
+set up
+$ git config --global user.name "Mariano Luiz King"
+$ git config --global user.email kmarianu@gmail.com
+$ git config --global init.default branch main
+
+
+help
+$ git config-h  or git help config
+
+clear
+$ clear
+$ pwd
+$ ls
+
+init
+$ git init
+
+status
+$ git status
+-see where branch u are.
+-see untracked files.
+
+to track file
+
+$ git add <file>
+$ git add .
+
+untrack file
+$ git rm --cached <file?
+
+make git ignore
+- make a .gitignore which is a file
+- drag the .gitignore into a notepad and inputfiles u want to ignore 
+        - ignore all .txt files
+        - many ways to ignore files, search it.
+
+
+
