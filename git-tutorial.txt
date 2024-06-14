@@ -102,4 +102,5 @@ $ git remote -v
 remove an existing remote
 $ git remote remove origin
 
+push all branches
 git push --all
