@@ -83,3 +83,13 @@ $ git switch <name of branch>
 
 to merge branch to main
 $ git merge -m "message" <branch name?
+
+to delete a branch
+$ git branch -d <branch name>
+
+to switch and create a new branch
+$ git switch -c newBranch
+
+//upload to GitHub/
+
+$ git remote add origin <link>
