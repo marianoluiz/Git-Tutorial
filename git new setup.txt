@@ -72,3 +72,11 @@ $ git commit -m "new name" --amend
 jump back to previous commits
 $ git reset <code of git --online>
 
+
+// BRANCHES //
+- create new branch, if satisfied, merge it back to main.
+
+
+$ git branch <name of branch>
+$ git branch                                 - to see branches
+$ git switch <name of branch>
