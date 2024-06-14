@@ -35,4 +35,7 @@ make git ignore
         - many ways to ignore files, search it.
 
 
+**once git added, there are in environment called staging
+**it's now time to commit (taking a snapshot of ur files)
 
+commit
