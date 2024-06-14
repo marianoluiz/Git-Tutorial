@@ -60,4 +60,15 @@ $ git commit -a -m "message"
 
 change a file name
 $ git mv "old name.txt" "new name.txt"
-git mv "git new setup.txt "git-tutorial.txt"
+
+see all commits
+$ git log
+$ git log --oneline
+$ git log -p     (press q to quit)
+
+change git commit name
+$ git commit -m "new name" --amend
+
+jump back to previous commits
+$ git reset <code of git --online>
+
