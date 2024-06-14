@@ -80,3 +80,6 @@ $ git reset <code of git --online>
 $ git branch <name of branch>
 $ git branch                                 - to see branches
 $ git switch <name of branch>
+
+to merge branch to main
+$ git merge -m "message" <branch name?
